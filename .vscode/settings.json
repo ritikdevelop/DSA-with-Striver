@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.pdf": "plaintext",
+        "*.kt": "gradle-kotlin-dsl",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}
