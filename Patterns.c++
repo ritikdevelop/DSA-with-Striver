@@ -1,8 +1,8 @@
-//1 *****
-//  *****
-//  *****
-//  *****
-//  *****
+// 1 *****
+//   *****
+//   *****
+//   *****
+//   *****
 
 // #include<iostream>
 // using namespace std;
@@ -93,7 +93,6 @@
 //     return 0;
 // }
 
-
 // *****
 // ****
 // ***
@@ -116,9 +115,6 @@
 //     }
 //     return 0;
 // }
-
-
-
 
 // 12345
 // 1234
@@ -143,19 +139,14 @@
 //     return 0;
 // }
 
-
-
-
-    //     *
-    //    * *
-    //   * * *
-    //  * * * * 
-    // * * * * *
-  
+//     *
+//    * *
+//   * * *
+//  * * * *
+// * * * * *
 
 // #include<iostream>
 // using namespace std;
-
 
 // void Pattern7(int n){
 //     for(int i=0;i<n;i++){
@@ -176,22 +167,19 @@
 //     cout<<"Enter number: ";
 //     cin>>num;
 //     Pattern7(num);
-    
+
 //     return 0;
 // }
 
-
-
 //         *
-    //    * *
-    //   * * *
-    //  * * * * 
-    // * * * * *
+//    * *
+//   * * *
+//  * * * *
+// * * * * *
 //   Reverse pattern
 
 // #include<iostream>
 // using namespace std;
-
 
 // void Pattern8(int n){
 //     for(int i=0;i<n;i++){
@@ -217,25 +205,21 @@
 //     return 0;
 // }
 
-
-
 //      *
 //     ***
-//    ***** 
+//    *****
 //   *******
 //  *********
-// ***********  
+// ***********
 // ***********
 //  *********
 //   *******
-//    ***** 
-//     ***    
+//    *****
+//     ***
 //      *
-
 
 // #include<iostream>
 // using namespace std;
-
 
 // void Pattern9(int n){
 //     for(int i=0;i<n;i++){
@@ -275,18 +259,14 @@
 //     reverse(num);
 // }
 
-
-
 // 1
 // 01
 // 101
 // 0101
 // 10101
 
-
 // #include<iostream>
 // using namespace std;
-
 
 // void Pattern11(int n){
 //     int start = 1;
@@ -312,9 +292,6 @@
 //     return 0;
 // }
 
-
-
-
 // #include<iostream>
 // using namespace std;
 
@@ -325,7 +302,7 @@
 //             cout<<j;
 //         }
 //         for(int j=1;j<=space;j++){
-//             cout<<"_"; 
+//             cout<<"_";
 //         }
 //         for(int j=i;j>=1;j--){
 //             cout<<j;
@@ -344,10 +321,8 @@
 //     return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
-
 
 // void Pattern13(int n){
 //     int num=1;
@@ -372,7 +347,6 @@
 // #include<iostream>
 // using namespace std;
 
-
 // void Pattern14(int n){
 //     for(int i=0;i<n;i++){
 //         for(char ch='A'; ch<='A'+i; ch++){
@@ -390,10 +364,8 @@
 //     return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
-
 
 // void Pattern15(int n){
 //     for (int i=0;i<n;i++){
@@ -416,7 +388,6 @@
 // #include<iostream>
 // using namespace std;
 
-
 // void Pattern16(int n){
 //     for(int i=0;i<=n;i++){
 //         char ch ='A'+i;
@@ -436,37 +407,146 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
 
-#include<iostream>
+// void Pattern17(int n)
+// {
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < n - i + 1; j++)
+//         {
+//             cout << "_";
+//         }
+//         char ch = 'A' + i;
+//         int breakpoint = (2 * i + 1) / 2;
+//         for (int j = 1; j <= 2 * i + 1; j++)
+//         {
+//             cout << ch;
+//             if (j <= breakpoint)
+//             {
+//                 ch++;
+//             }
+//             else
+//             {
+//                 ch--;
+//             }
+//         }
+//         for (int j = 0; j < n - i - 1; j++)
+//         {
+//             cout << "_";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// int main()
+// {
+//     int num;
+//     cout << "Enter number to print pattern: ";
+//     cin >> num;
+
+//     Pattern17(num);
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// void Pattern18(int num){
+//     for(int i=0;i<num;i++){
+//         for(char ch =('A'+num-1)-i;ch<=('A'+num-1);ch++){
+//             cout<<ch<<" ";
+//         }
+//         cout<<endl;
+//     }
+// }
+// int main(){
+//     int num;
+//     cout<<"Enter the number to print pattern: ";
+//     cin>>num;
+
+//     Pattern18(num);
+//     return 0;
+// }
+
+#include <iostream>
 using namespace std;
 
-void Pattern17(int n){
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n-i+1;j++){
-            cout<<"_";
+void Pattern19(int N)
+{
+    int iniS = 0;
+    for (int i = 0; i < N; i++)
+    {
+
+        // for printing the stars in the row.
+        for (int j = 1; j <= N - i; j++)
+        {
+            cout << "*";
         }
-        char ch = 'A'+i;
-        int breakpoint = (2*i+1)/2;
-        for(int j=1;j<=2*i+1;j++){
-            cout<<ch;
-            if(j<=breakpoint){
-                ch++;
-            } else{
-                ch--;
-            }
+
+        // for printing the spaces in the row.
+        for (int j = 0; j < iniS; j++)
+        {
+            cout << " ";
+        }
+
+        // for printing the stars in the row.
+        for (int j = 1; j <= N - i; j++)
+        {
+            cout << "*";
+        }
+
+        // The spaces increase by 2 every time we hit a new row.
+        iniS += 2;
+
+        // As soon as the stars for each iteration are printed, we move to the
+        // next row and give a line break otherwise all stars
+        // would get printed in 1 line.
+        cout << endl;
     }
-    for(int j=0;j<n-i-1;j++){
-        cout<<"_";
+
+    // for lower half of the pattern
+
+    // initial spaces.
+    iniS = 2 * N - 2;
+    for (int i = 1; i <= N; i++)
+    {
+
+        // for printing the stars in the row.
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+
+        // for printing the spaces in the row.
+        for (int j = 0; j < iniS; j++)
+        {
+            cout << " ";
+        }
+
+        // for printing the stars in the row.
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+
+        // The spaces decrease by 2 every time we hit a new row.
+        iniS -= 2;
+
+        // As soon as the stars for each iteration are printed, we move to the
+        // next row and give a line break otherwise all stars
+        // would get printed in 1 line.
+        cout << endl;
     }
-    cout<<endl;
-}
 }
 
-int main(){
+int main()
+{
     int num;
-    cout<<"Enter number to print pattern: ";
-    cin>>num;
+    cout << "Enter the number to print: ";
+    cin >> num;
 
-    Pattern17(num);
+    Pattern19(num);
     return 0;
 }
